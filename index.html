@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+</head>
+<body>
+    <div class="m-userinf clearfix">
+        <div class="left">
+            <img src="" width="269px" height="268px" alt="用户头像" />
+            <span>好友数: 200个</span>
+        </div>
+        <dl class="right">
+            <dt>用户名称</dt>
+            <dd class="multi">ali丹晓书</dd>
+            <dt>城市</dt>
+            <dd>浙江 - 杭州</dd>
+            <dt>账户状态</dt>
+            <dd>已关小黑屋/禁言</dd>
+            <dt>性别</dt>
+            <dd>男</dd>
+            <dt>用户ID</dt>
+            <dd>716030</dd>
+            <dt>手机号码</dt>
+            <dd>15068142681</dd>
+            <dt>注册时间</dt>
+            <dd>2014-07-10</dd>
+            <dt>生日</dt>
+            <dd>1987-8-2</dd>
+            <dt>淘宝账户</dt>
+            <dd>淘旺vip</dd>
+            <dt>用户标签</dt>
+            <dd class="multi">
+                <ul class="tag">
+                    <li class="orange">专业祛痘</li>
+                    <li class="red">专业祛斑</li>
+                </ul>
+            </dd>
+            <dt>用户简介</dt>
+            <dd class="multi">专访指定合作伙伴V</dd>
+            <dt>语音名片</dt>
+            <dd class="multi"></dd>
+        </dl>
+    </div>
+
+    <ul class="m-gall clearfix">
+        <li>
+            <img src="" width="110px" height="110px" alt="pic" />
+            <div class="operation"><a href="javascript:;" class="u-btn">删除</a><a href="javascript:;" class="u-btn">学习</a></div>
+            <div class="mask"></div>
+        </li>
+        <li>
+            <img src="" width="110px" height="110px" alt="pic" />
+            <div class="operation"><a href="javascript:;" class="u-btn">删除</a><a href="javascript:;" class="u-btn">学习</a></div>
+            <div class="mask"></div>
+        </li>
+        <li>
+            <img src="" width="110px" height="110px" alt="pic" />
+            <div class="operation"><a href="javascript:;" class="u-btn">删除</a><a href="javascript:;" class="u-btn">学习</a></div>
+            <div class="mask"></div>
+        </li>
+        <li>
+            <img src="" width="110px" height="110px" alt="pic" />
+            <div class="operation"><a href="javascript:;" class="u-btn">删除</a><a href="javascript:;" class="u-btn">学习</a></div>
+            <div class="mask"></div>
+        </li>
+        <li>
+            <img src="" width="110px" height="110px" alt="pic" />
+            <div class="operation"><a href="javascript:;" class="u-btn">删除</a><a href="javascript:;" class="u-btn">学习</a></div>
+            <div class="mask"></div>
+        </li>
+        <li>
+            <img src="" width="110px" height="110px" alt="pic" />
+            <div class="operation"><a href="javascript:;" class="u-btn">删除</a><a href="javascript:;" class="u-btn">学习</a></div>
+            <div class="mask"></div>
+        </li>
+        <li>
+            <img src="" width="110px" height="110px" alt="pic" />
+            <div class="operation"><a href="javascript:;" class="u-btn">删除</a><a href="javascript:;" class="u-btn">学习</a></div>
+            <div class="mask"></div>
+        </li>
+        <li>
+            <img src="" width="110px" height="110px" alt="pic" />
+            <div class="operation"><a href="javascript:;" class="u-btn">删除</a><a href="javascript:;" class="u-btn">学习</a></div>
+            <div class="mask"></div>
+        </li>
+    </ul>
+
+    <ul class="m-operation clearfix">
+        <li>
+            <a href="javascript:;" class="u-btn u-btn-1">禁言</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="u-btn u-btn-1">陌聊话题</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="u-btn u-btn-1">关小黑屋</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="u-btn u-btn-1">清除用户</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="u-btn u-btn-1">改名</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="u-btn u-btn-1">清除头像</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="u-btn u-btn-1">清除个人简介</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="u-btn u-btn-1">清除个人标签</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="u-btn u-btn-1">取消RC白名单</a>
+        </li>
+        <li>
+            <a href="javascript:;" class="u-btn u-btn-1">取消大V</a>
+        </li>
+    </ul>
+
+    <script type="text/x-handlebars" data-template-name="application">
+        <ul class="outlet-switcher clearfix">
+            {{#view App.TabView item="dynamics"}}{{#link-to 'dynamics'}}动态管理{{/link-to}}{{/view}}
+            {{#view App.TabView item="comments" class="active"}}{{#link-to 'comments'}}评论管理{{/link-to}}{{/view}}
+            {{#view App.TabView item="activities"}}{{#link-to 'activities'}}活动管理{{/link-to}}{{/view}}
+            {{#view App.TabView item="services"}}{{#link-to 'services'}}服务记录{{/link-to}}{{/view}}
+            {{#view App.TabView item="violations"}}{{#link-to 'violations'}}违规记录{{/link-to}}{{/view}}
+        </ul>
+        <div class="m-manage">
+            {{ outlet }}
+        </div>
+    </script>
+    <script type="text/x-handlebars" data-template-name="comments">
+        <table border="0" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <td width="45px">用户ID</td>
+                    <td width="50px">用户头像</td>
+                    <td width="55px">用户名称</td>
+                    <td width="110px">手机号码</td>
+                    <td>淘宝Nick</td>
+                    <td width="125px">注册时间</td>
+                    <td>用户状态</td>
+                    <td>特殊授权</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+            <tbody>
+            {{#each}}
+            <tr {{bind-attr data-id="commentId" class="oddOrEven"}} >
+                <td>{{userId}}</td>
+                <td><img {{bind-attr src="userAvatar"}} width="30px" height="30px" alt="pic" /></td>
+                <td>{{userName}}</td>
+                <td>{{phoneNo}}</td>
+                <td>{{taobaoNick}}</td>
+                <td>{{regTime}}</td>
+                <td>{{userState}}</td>
+                <td></td>
+                <td><a href="javascript:;" class="u-btn u-btn-1">查看详情</a></td>
+            </tr>
+            {{/each}}
+            </tbody>
+        </table>
+        <ul class="m-pagination">
+            {{pagination pageInfo}}
+        </ul>
+    </script>
+    <script type="text/x-handlebars" data-template-name="dynamics">
+    this is dynamics;
+    </script>
+    <script type="text/x-handlebars" data-template-name="activities">
+    this is activities;
+    </script>
+    <script type="text/x-handlebars" data-template-name="services">
+    this is services;
+    </script>
+    <script type="text/x-handlebars" data-template-name="violations">
+    this is violations;
+    </script>
+    <script type="text/javascript" src="js/lib/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/lib/handlebars-1.1.2.js"></script>
+    <script type="text/javascript" src="js/lib/ember-1.7.0.js"></script>
+    <script type="text/javascript" src="js/lib/ember-data.js"></script>
+    <script type="text/javascript" src="js/helper/handlebar-helper.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/comments.js"></script>
+</body>
+</html>

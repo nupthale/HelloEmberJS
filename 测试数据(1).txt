@@ -1,0 +1,22 @@
+{
+ "pageInfo":{"totalPage":10,"currentPage":2},
+  "comments": [{
+	"commentId":"123page2",
+	"userId":"321page2",
+	"userAvatar":"http://abc.png",
+	"userName":"hale",
+	"phoneNo":"13213213213",
+	"taobaoNick":"hale nick",
+	"regTime":"2013-01-02",
+	"userState":"正常"	
+},{
+	"commentId":"123page22",
+	"userId":"321page23",
+	"userAvatar":"http://abc.png",
+	"userName":"hale",
+	"phoneNo":"13213213213",
+	"taobaoNick":"hale nick",
+	"regTime":"2013-01-02",
+	"userState":"正常"	
+}]
+}

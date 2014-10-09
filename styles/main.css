@@ -1,0 +1,61 @@
+* { margin:0px; padding:0px;}
+body { width:940px; margin:0 auto; padding:38px 10px; font-size:12px; font-family:'MicroSoft Yahei'; }
+ul { list-style:none; }
+a { text-decoration:none; color:#000; cursor:pointer; }
+table { border-collapse:collapse; border:none; }
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.u-btn { display:inline-block; color:#fff; padding:4px 5px; text-align:center; background:#1A99FC; margin-right:10px; }
+.u-btn-1 { width:76px; }
+
+.m-userinf { font-size:14px; color:#444; }
+.m-userinf .left { float:left; width:269px;}
+.m-userinf .right { float:left; width:621px; margin-left:50px; }
+
+.m-userinf dt { width:110px; }
+.m-userinf dd { color:#666; width:200px; }
+.m-userinf dd.multi { width:511px; }
+.m-userinf dt, .m-userinf dd { float:left; margin-bottom:24px; }
+
+.m-userinf .tag { height:36px; }
+.m-userinf .tag li { float:left; padding:3px 10px; margin:0 10px 10px 0; font-size:12px; color:#fff; }
+.m-userinf .tag li.orange { background-color:#FDCB33; }
+.m-userinf .tag li.red { background-color:#FC6666; }
+
+.m-gall li { float:left; position:relative; width:110px; height:110px; overlow:hidden; margin-right:4px; }
+.m-gall .operation { position:absolute; z-index:2; height:20px; text-align:right; margin:auto; top:0; bottom:0; left:0; right:0; font-size:14px; }
+.m-gall .mask { position:absolute; width:100%; height:100%; top:0; background-color:#444; opacity:0.4; z-index:1;}
+
+.m-operation { margin:20px 0 110px 0; padding:10px 0; border-top-width:2px; border-bottom-width:2px; border-right-width:0; border-left-width:0; border-color:#B4B4B4; border-style:solid; }
+.m-operation li { float:left;; width:84px; margin-right:10px; }
+
+/**
+ * Tab切换
+ */
+.outlet-switcher { border-left:1px solid #CCC; border-bottom:1px solid #CCC; } 
+.outlet-switcher li { float:left; border-top:1px solid #CCC; border-right:1px solid #CCC; background:#EEE; font-size:14px; }
+.outlet-switcher li.active { background:#fff; border-top-color:#1A98FC; border-right-color:#fff; margin-left:-1px; margin-bottom:-1px; }
+.outlet-switcher li a { display:block; padding:15px 20px; }
+
+.m-manage { margin-top:50px; }
+.m-manage table {width:100%;}
+.m-manage table td { padding:15px 5px; border:1px solid #CCC; }
+.m-manage table thead td { background:#D7D7D7; }
+
+.m-manage table .odd { background:#F2F2F2; }
+
+/**
+ * pagination 页码
+ */
+.m-pagination { float:right; margin-top:10px; }
+.m-pagination li { float:left; border:1px solid #336699; margin-left:5px; }
+.m-pagination li.active a { background:#336699; color:#fff; }
+.m-pagination li.disabled a { cursor:not-allowed; background:#ccc; }
+.m-pagination li a { display:inline-block; padding:0 5px; font-size:14px; }
